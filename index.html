@@ -14,19 +14,30 @@
     <main>
         <div class="container container_outer">
             <div class="container container_red">
-                <div class="entry-form">
-                    <input type="text">
-                    <input type="email">
-                    <input type="text">
-                    <input type="text">
-                    <button type="submit">SEND MESSAGE</button>
-                </div>
+                <form class="entry-form">
+                    <div class="entry-field entry-field__name">
+                        <label for="name">FULL NAME</label>
+                        <input name="name" type="text" class="input-field">
+                    </div>
+                    <div class="entry-field entry-field__email">
+                        <label for="email">EMAIL</label>
+                        <input name="email" type="email" placeholder="Your Email" class="input-field">
+                    </div>
+                    <div class="entry-field entry-field__regarding">
+                        <label for="regarding">MESSAGE REGARDING</label>
+                        <input name="regarding" type="text" class="input-field">
+                    </div>
+                    <div class="entry-field entry-field__message">
+                        <label for="message">MESSAGE</label>
+                        <input name="message" type="text" placeholder="Your Message" class="input-field">
+                    </div>
+                    <button class="button" type="submit">SEND MESSAGE</button>
+                </form>
             </div>
-            <div class="container container_yellow">
-                <img src="images/rubberduck.png" width="663px" 
-                    alt="A yellow rubber duck">
-            </div>
+            <div class="container container_yellow"></div>
         </div>
+        <img src="images/rubberduck.png" width="663px" class="rubberduck"
+        alt="A yellow rubber duck">
     </main>
 
 </body>

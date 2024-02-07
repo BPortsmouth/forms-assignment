@@ -8,7 +8,6 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-
 .container {
     max-height: 594px;
     height: 100%;
@@ -30,15 +29,70 @@ main {
     width: 36%;
     border-radius: 0px 5px 5px 0px;
     justify-content: flex-end;
-    align-items: flex-start;
+}
+.rubberduck {
+    position:fixed;
+    transform: translate(200px, 60px);
+    z-index: 1;
 }
 
 .entry-form {
     display: flex;
     align-self: center;
     flex-direction: column;
+    justify-content: space-around;
     max-width: 400px;
     width: 100%;
     height: 80%;
-    transform: translateX(-20px);
+    transform: translateX(-30px);
+    font-size: 18px;
+    color: #FFF;
+}
+
+.entry-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry-field__regarding .input-field, .entry-field__email .input-field{
+    width: 40%;
+}
+
+.input-field {
+    background:none;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #9DBEBB;
+    height: 49px;
+    color: #FFF;
+    letter-spacing: .3rem;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.input-field:hover {
+    background-color: #cf3737;
+}
+
+.input-field:focus {
+    letter-spacing: 0;
+}
+
+.entry-field__email .input-field:focus {
+    width:auto;
+}
+
+.button {
+    max-width: 200px;
+    width: 100%;
+    height: 48px;
+    align-self: center;
+    background-color: #468189;
+    border-radius: 40px;
+    border: none;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.button:hover {
+    background-color: #31646b;
 }
